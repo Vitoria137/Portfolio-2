@@ -222,7 +222,7 @@ body {
 }
 
 .esquerda .titulo-1 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 300;
     color: var(--Paragrafo);
 }
@@ -240,7 +240,7 @@ body {
 }
 
 .nav a {
-    font-size: 18px;
+    font-size: 19px;
     color: var(--Paragrafo);
 }
 
@@ -261,7 +261,7 @@ body {
     gap: 10px;
     width: 60%;
     min-width: 310px;
-    height: 15rem;
+    height: 24rem;
     overflow: hidden;
 }
 
@@ -279,7 +279,7 @@ body {
     position: absolute;
     content: '';
     width: 15%;
-    height: 35rem;
+    height: 100rem;
     background: #D283D9;
     animation: rotate 6s linear infinite;
 }
@@ -288,7 +288,7 @@ body {
     content: '';
     position: absolute;
     width: 98%;
-    height: 14.5rem;
+    height: 23rem;
     background-color: var(--Fundo);
     border-radius: 10px;
 }
@@ -317,24 +317,37 @@ body {
     color: var(--Paragrafo-menor);
 }
 
-/* FIM DO SOBRE */
-
-.sobre{
-    width: 80%;
-    position: relative;
-    margin: 100px auto;
+.inicio .nome::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--Paragrafo-menor);
+    margin-left: 5px;
+    height: 100%;
+    animation: barrinha .9s infinite;
 }
+
+@keyframes barrinha {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+/* FIM DO SOBRE */
 
 :where(.titulo){
     position: relative;
-    font-size: 20px;
+    font-size: 35px;
     color: var(--Titulo);
-    margin-bottom: 10px;
 }
 
 :where(.titulo)::after{
     content: '';
     position: absolute;
+    font-size: 20px;
     bottom: 0;
     left: 0;
     width: 50px;
@@ -342,14 +355,26 @@ body {
     background-color: var(--Titulo);
 }
 
-.sobre .paragrafo{
-    width: 30%;
+.sobre{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 10rem auto;
+}
+
+.sobre .paragrafo{   
     font-size: 13px;
     color: var(--Paragrafo-menor);
 }
 
+.sobre .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .sobre img{
-    width: 30%;
+    width: 50%;
 }
 
 /* Habilidades */
@@ -368,26 +393,28 @@ body {
     background-size: 35%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     justify-items: center;
     margin-left: 40px;
 }
 
 .habilidade{
+    margin: 15px;
     width: 100%;
     position: relative;
 }
 
+.habilidade h1{
+    color: var(--Paragrafo-menor);
+}
+
 .habilidade span{
     grid-column: 2;
-    font-size: 12px;
+    width: 30%;
+    font-size: 15px;
     color: var(--Paragrafo);
 }
 
-.habilidade h1{
-    font-size: 14px;
-    color: var(--Titulo);
-}
 
 .habilidade i{
     position: absolute;
