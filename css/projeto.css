@@ -131,9 +131,14 @@ body{
     opacity: .3;
 }
 
-
-
 .andamento{
     font-size: 30px;
     color: var(--Fundo);
+}
+
+@media (max-width: 750px){
+    .content{
+    transform: translateY(0px);
+    opacity: 1;
+    }
 }

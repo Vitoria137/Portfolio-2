@@ -400,8 +400,8 @@ body {
 }
 
 .cont-habilidades{
-    background: url(/img/habilidades.png) center center no-repeat;
-    background-size: 35%;
+    background: url(/img/habilidade.png) center center no-repeat;
+    background-size: 60%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
