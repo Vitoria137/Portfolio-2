@@ -9,6 +9,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
     --Bordinha: #E5D9FF;
     --Titulo: #F9BAFF;
     --Paragrafo-menor: #E5D9FF;
-    --Botao: #31093F;
+    --Botao: #D3B4FA;
     --Paragrafo: #E5D9FF;
 }
 
@@ -155,20 +156,11 @@ body {
     transform: rotate(-45deg);
 }
 
-@media (max-width: 500px) {
-    .navigation-mobile {
-        visibility: visible;
-    }
-    .cabecalho-desktop{
-        visibility: hidden;
-    }
-}
-
-.btn {
+.btn, .btn-cel {
     display: flex;
 }
 
-.check {
+.check, .check-cel {
     opacity: 0;
     position: absolute;
 }
@@ -177,28 +169,47 @@ body {
     color: white;
 }
 
-.dark {
+.dark{
     position: relative;
     width: 40px;
-    border-radius: 9px;
-    background-color: #000;
-    transform: scale(.7);
+    display: flex;
+    border-radius: 15px;
+    padding: 5px 22px;
+    background-color: var(--Botao);
+    transform: scale(.8);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.dark .ball {
+.dark-cel{
+    position: relative;
+    width: 40px;
+    display: flex;
+    background-color: var(--Botao);
+    transform: scale(.8);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 25px;
+    border-radius: 15px;
+}
+
+.dark .ball{
     position: absolute;
-    top: 0;
-    transform: translateX(0px);
+    top: 2px;
+    transform: translateX(-11px);
     border-radius: 50%;
-    border: 2px solid black;
-    width: 19px;
-    height: 19px;
+    border: 2px solid var(--Botao);
+    width: 22px;
+    height: 22px;
     background-color: #ffffff;
     transition: transform .2s linear;
 }
 
-.check:checked+.dark .ball {
-    transform: translateX(20px);
+
+.check:checked + .dark .ball {
+    transform: translateX(10px);
 }
 
 .cabecalho-desktop {
@@ -236,7 +247,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
 }
 
 .nav a {
@@ -259,8 +270,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 60%;
-    min-width: 310px;
+    width: 80%;
     height: 24rem;
     overflow: hidden;
 }
@@ -296,7 +306,7 @@ body {
 .inicio .titulo-2 {
     position: relative;
     z-index: 2;
-    font-size: 4rem;
+    font-size: 4em;
     font-weight: 900;
     color: var(--Titulo);
     box-shadow: 0 2px 1px -1px var(--Titulo);
@@ -359,11 +369,12 @@ body {
     width: 60%;
     display: flex;
     flex-direction: row;
-    margin: 10rem auto;
+    margin: 8rem auto;
 }
 
 .sobre .paragrafo{   
-    font-size: 13px;
+    font-size: 16px;
+    padding-top: 10px;
     color: var(--Paragrafo-menor);
 }
 
@@ -389,7 +400,7 @@ body {
 }
 
 .cont-habilidades{
-    background: url(img/habilidades.png) center center no-repeat;
+    background: url(/img/habilidades.png) center center no-repeat;
     background-size: 35%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -470,4 +481,98 @@ body {
 
 .fa-github{
     color: #000;
+}
+
+.btn-projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--Botao);
+    color: var(--Fundo);
+    font-size: 18px;
+    transition: .2s ;
+}
+
+.btn-projeto:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 36%);
+}
+
+.projeto p{
+    width: 80%;
+}
+
+.projeto img{
+    width: 55%;
+}
+
+.rodape{
+    background-color: var(--Botao);
+    padding: 20px 0;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.contatos p{
+    font-size: 16px;
+    color: var(--Fundo);
+}
+
+.t-contato{
+    color: #B03ADA;
+}
+
+.contatos p span{
+    color: #B03ADA;
+}
+
+.btn-redes a{
+    padding: 6px 15px;
+    background-color: var(--Fundo);
+    color: var(--Botao);
+    border-radius: 10px 30px;
+    transition: .3s;
+}
+
+.btn-redes a:hover{
+    border-radius: 0;
+}
+
+
+@media (max-width: 750px) {
+    .navigation-mobile {
+        visibility: visible;
+    }
+    .cabecalho-desktop{
+        visibility: hidden;
+    }
+    .sobre img{
+        display: none;
+    }
+    .cont-habilidades{
+        background: none;
+        
+    }
+    .habilidade{
+        grid-column-start: 2;
+    }
+    .inicio .titulo-2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .inicio .titulo-2{
+        font-size: 2rem;
+    }
 }

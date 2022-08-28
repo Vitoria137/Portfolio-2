@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projeto.css">
+    <title>Projetos</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-projetos">Projetos</h1>
+        <a href="index.html" class="btn-projeto">Início</a>
+    </header>
+    <div class="cards">
+        <div class="card card-1">
+            <div class="content">
+                <img src="img/projetos/card-1.png" alt="">
+                <h1 class="t-f">01</h1>
+                <h1>Projeto 01</h1>
+                <p>Componente do cartão de visualização NFT. Desafio do Frontend mentor sendo um pequeno projeto para brincar com html e css</p>
+                <a href="https://vitoria137.github.io/NFT-Card-Component/" target="_blank">Página</a>
+                <a href="https://github.com/Vitoria137/NFT-Card-Component" target="_blank">Repositório Github</a>
+            </div>
+        </div>
+        <div class="card card-2">
+            <div class="content">
+                <img src="img/projetos/card-2.png" alt="">
+                <h1 class="t-f">02</h1>
+                <h1>Projeto 02</h1>
+                <p>Componente de resumo do pedido. Desafio do Frontend mentor para aprender mais sobre layouts</p>
+                <a href="https://vitoria137.github.io/Order-summary-main/" target="_blank">Página</a>
+                <a href="https://github.com/Vitoria137/Order-summary-main" target="_blank">Repositório Github</a>
+            </div>
+        </div>
+        <div class="card card-3">
+            <div class="content">
+                <img src="img/projetos/card-3.png" alt="">
+                <h1 class="t-f">03</h1>
+                <h1>Projeto 03</h1>
+                <p>Página de destino da área de transferência.Desafio do Frontend mentor que inclui um design para estados de foco.</p>
+                <a href="https://vitoria137.github.io/Clipboard-Landing-Page/" target="_blank">Página</a>
+                <a href="https://github.com/Vitoria137/Clipboard-Landing-Page" target="_blank">Repositório Github</a>
+            </div>
+        </div>
+        <div class="card card-4">
+            <div class="content">                
+                <img src="img/projetos/card-4.png" alt="">
+                <h1 class="t-f">04</h1>
+                <h1>Projeto 04</h1>
+                <p>Challeng do #7DaysOfCode da Alura criando uma página com css e html</p>
+                <a href="https://vitoria137.github.io/7DaysOfCode/" target="_blank">Página</a>
+                <a href="https://github.com/Vitoria137/7DaysOfCode" target="_blank">Repositório Github</a>
+            </div>
+        </div>
+        <div class="card card-5">
+            <div class="content">
+                <img src="img/projetos/card-5.png" alt="">
+                <h1 class="t-f">05</h1>
+                <h1>Projeto 05</h1>
+                <p>Projeto feito no meu tcc de desenvolvimento de sistemas, ainda não foi 100% concluído</p>
+                <a href="https://vitoria137.github.io/Padaria_web/" target="_blank">Página</a>
+                <a href="https://github.com/Vitoria137/Padaria_web" target="_blank">Repositório Github</a>
+            </div>
+        </div>
+        <div class="card card-6">
+            <div class="content">
+                <h1 class="t-f">06</h1>
+                <h1>Projeto 06</h1>
+                <p class="andamento">Em Andamento...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400,
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+
+</html>

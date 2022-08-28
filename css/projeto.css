@@ -1,0 +1,139 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 40px;
+    background-color: #31093F;
+}
+
+:root {
+    --Fundo: #E5D9FF;
+    --Bordinha: #D283D9;
+    --Titulo: #673C89;
+    --Paragrafo-menor: #663E86;
+    --Botao: #31093fcc;
+    --Paragrafo: #31093F;
+}
+
+.mode:root {
+    --Fundo: #402E5F;
+    --Bordinha: #E5D9FF;
+    --Titulo: #F9BAFF;
+    --Paragrafo-menor: #E5D9FF;
+    --Botao: #D3B4FA;
+    --Paragrafo: #E5D9FF;
+}
+
+.titulo-projetos{
+    font-size: 50px;
+    color: var(--Fundo);
+}
+
+.btn-projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--Fundo);
+    color: var(--Botao);
+    font-size: 18px;
+    transition: .2s ;
+}
+
+.btn-projeto:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 36%);
+}
+
+.cards{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    margin: 0 30px;
+    width: 200px;
+    height: 300px;
+    margin-top: 10rem;
+    background-color: rgba(0, 0, 0, 0.278);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    box-shadow: 4px 5px 8px -5px rgb(211, 206, 206);
+}
+
+.card img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .1;
+}
+
+.card a{
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--Fundo);
+    background-color: var(--Bordinha);
+    transition: .2s;
+}
+
+.card a:hover{
+    transform: scale(1.05);
+}
+
+ .content{   
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    background: var(--Botao);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    color: var(--Fundo);
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all .6s;
+}
+
+.card:hover .content{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.t-f{
+    position: absolute;
+    font-size: 100px;
+    top: 10px;
+    right: 10px;
+    opacity: .3;
+}
+
+
+
+.andamento{
+    font-size: 30px;
+    color: var(--Fundo);
+}

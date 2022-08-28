@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfólio</title>
 </head>
 
@@ -24,8 +24,15 @@
                 <li><a href="#sobre" class="info-li">Sobre</a></li>
                 <li><a href="#habilidades" class="info-li">Habilidades</a></li>
                 <li><a href="#projetos" class="info-li">Projetos</a></li>
-                <li><a href="contato" class="info-li">Contato</a></li>
+                <li><a href="contatos" class="info-li">Contato</a></li>
                 </a>
+                <div class="btn-cel">
+                    <input type="checkbox" name="dark" id="dark-cel" class="check">
+                    <label for="dark" class="dark-cel">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </label>
+                </div>
             </div>
         </div>
 
@@ -35,14 +42,14 @@
                     <img src="img/avatar.png" alt="">
                 </div>
                 <h1 class="titulo-1"><span>Port</span>fólio</h1>
-                
+
             </div>
             <div class="nav">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contatos">Contato</a></li>
                 <div class="btn">
                     <input type="checkbox" name="dark" id="dark" class="check">
                     <label for="dark" class="dark">
@@ -64,9 +71,11 @@
     <section class="sobre" id="sobre">
         <div class="text">
             <h1 class="titulo">Sobre mim</h1>
-            <p class="paragrafo">Meu nome é Vitoria Palmeira e adoro a área de tecnologia. Meu primeiro contato foi em 2018 em um curso técnico de informática integrado ao ensino médio. Terminano fiquei dois anos parada na área de programação mas voltei a me dedicar no começo de 2022 e pretendo me aprofundar sempre mais.</p>
+            <p class="paragrafo">Meu nome é Vitoria Palmeira e adoro a área de tecnologia. Meu primeiro contato foi em
+                2018 em um curso técnico de informática integrado ao ensino médio. Terminano fiquei dois anos parada na
+                área de programação mas voltei a me dedicar no começo de 2022 e pretendo me aprofundar sempre mais.</p>
         </div>
-        
+
         <img src="img/sobre.png" alt="ilustração de menina">
     </section>
 
@@ -91,29 +100,54 @@
             <div class="habilidade react">
                 <i class="fa-brands fa-react"></i>
                 <h1>React</h1>
-                <span>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web</span>
+                <span>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em
+                    páginas web</span>
             </div>
             <div class="habilidade git" data-anime="right">
                 <i class="fa-brands fa-git-alt"></i>
                 <h1>Git</h1>
-                <span>É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software</span>
+                <span>É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de
+                    software</span>
             </div>
             <div class="habilidade github" data-anime="right">
                 <i class="fa-brands fa-github"></i>
                 <h1>Github</h1>
-                <span>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git</span>
+                <span>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o
+                    Git</span>
             </div>
         </div>
     </section>
 
-
-
-
+    <section class="projetos" id="projetos">
+        <div class="sobre projeto">
+            <div class="text">
+                <h1 class="titulo">Projetos</h1>
+                <p class="paragrafo">
+                    Projetos feitos para testar e aprimorar meus conhecimentos na área, me desafiando mais a cada
+                    projeto.
+                </p>
+                <a href="projetos.html" class="btn-projeto">Projetos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <img src="img/projetos.png" alt="">
+        </div>
+    </section>
+    
+    <footer class="rodape" id="contatos">
+            <div class="contatos">
+                <h1 class="titulo t-contato">Contatos</h1>
+                <p><span>E-mail: </span>vitoriacristinar137@gmail.com</p>
+                <p><span>Celular: </span>(16)98220-8182</p>
+                <div class="btn-redes">
+                    <a target="_blank" href="https://www.linkedin.com/in/vitoria-cristina-ribeiro-palmeira-662ba6234/" class="linkedin">Linkedin</a>
+                    <a href="https://github.com/Vitoria137" target="_blank" class="github">Github</a>
+                </div>
+            </div>
+    </footer>
 
 
 
     <script src="https://kit.fontawesome.com/5a363efe11.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
